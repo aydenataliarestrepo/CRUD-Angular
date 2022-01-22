@@ -1,0 +1,7 @@
+.background-overlay {
+    background: rgba(105, 106, 107, 0.527);
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+}
