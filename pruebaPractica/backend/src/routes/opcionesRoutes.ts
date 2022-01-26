@@ -25,7 +25,7 @@ class OpcionesRoutes {
         //Permite listar las opciones (usuarios)
         this.router.get('/', opcionesController.list);
 
-        //Permite listar las opciones (usuarios)
+        //Permite listar una opcion (usuarios)
         this.router.get('/:id', opcionesController.getOne);
 
         //Para crear más opciones (usuarios) qu se quieran agregar  

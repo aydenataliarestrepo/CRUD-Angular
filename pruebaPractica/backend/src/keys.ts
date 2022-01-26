@@ -9,6 +9,6 @@ export default{
         //Clave mysql
         pasword: '',
         //nombre de la base de datos creada
-        database: 'pruebapracticabd'
+        database: 'ng_opciones_db'
     }
 }

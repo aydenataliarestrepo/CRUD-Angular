@@ -22,7 +22,7 @@ class OpcionesRoutes {
         //Creación ruta inicial para el servidor 
         //Permite listar las opciones (usuarios)
         this.router.get('/', opcionesControllers_1.default.list);
-        //Permite listar las opciones (usuarios)
+        //Permite listar una opcion (usuarios)
         this.router.get('/:id', opcionesControllers_1.default.getOne);
         //Para crear más opciones (usuarios) qu se quieran agregar  
         this.router.post('/', opcionesControllers_1.default.create);
