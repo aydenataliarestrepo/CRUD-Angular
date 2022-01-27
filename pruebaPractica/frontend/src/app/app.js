@@ -1,8 +1,9 @@
+/*
 const forElemnt = document.getElementById("saveTransaction");
 const forBotton = document.getElementById("saveTransaction");
 
 forElemnt.addEventListener("submit", (Event) => {
-    Event.preventDefault();
+    //Event.preventDefault();
     //Obtengo el valor de los input 
     let transactionIdUs = document.getElementById("transactionIdUs").nodeValue;
     let transactionNombre = document.getElementById("transactionNombre").nodeValue;
@@ -23,3 +24,4 @@ forElemnt.addEventListener("submit", (Event) => {
     Event
 
 })
+*/

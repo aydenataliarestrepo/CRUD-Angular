@@ -37,6 +37,7 @@ import {RegistroService} from './services/registro.service';
     NavegacionComponent,
     FormularioUsuariosComponent,
     
+    
   ],
   imports: [
 

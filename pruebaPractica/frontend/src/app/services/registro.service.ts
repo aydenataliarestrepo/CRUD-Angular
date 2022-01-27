@@ -19,26 +19,26 @@ constructor(private http: HttpClient) { }
 
 //Listar  usuarios
 getUsuarios(){
-  return this.http.get('${this.API_URI}/usuarios')
+  return this.http.get('${this.API_URI}/opciones')
 }
 
 //Buscar usuario especifico 
 getUsuario(){
-  return this.http.get('${this.API_URI}/usuarios/${id}');
+  return this.http.get('${this.API_URI}/opciones/${id}');
 }
 
 //Eliminar usuario 
 deleteUsuario(id: string){
-  return this.http.delete('${this.API_URY}/usuarios${id}');
+  return this.http.delete('${this.API_URI}/opciones${id}');
 
 }
 //Guardar usuario 
 saveUsuario(registro : Registro){
-  return this.http.post('${this.API_URI}/usuarios',registro);
+  return this.http.post('${this.API_URI}/opciones',registro);
 }
 
 //actualizar 
 updateUsuario(id: string ,updateUsuario:Registro){
-  return this.http.put('${this.API_URY}/usuarios${id}', updateUsuario);
+  return this.http.put('${this.API_URI}/opciones${id}', updateUsuario);
 }
 }

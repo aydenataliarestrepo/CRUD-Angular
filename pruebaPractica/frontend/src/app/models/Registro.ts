@@ -1,9 +1,9 @@
-export interface Registro {
 
-    idusuario: string;
+
+export interface Registro {
+    idusuario: any;
     nombre: string;
     activo: string; 
-    rol:string;
-
+    rol:any;
 
 };
