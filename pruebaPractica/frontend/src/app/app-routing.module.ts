@@ -12,31 +12,14 @@ import { ActualizacionComponent } from './components/actualizacion/actualizacion
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 
 const routes:Routes=[
-  /*
-  {
-    path:'',  redirectTo:'/inicio', pathMatch : 'full',
-    
-
-
-  },
-
-  {
-    path:'inicio',  component:NavegacionComponent
-
-  },
-  {
-    path:'/inicio', redirectTo:'/busqueda',pathMatch:'ful'
-  },
-  {
-    path:'busqueda',  component:BusquedaComponent
-  }*/
+  
 
   {path: 'busqueda', component: BusquedaComponent},
   {path:'creacion-usuario', component: RegistroComponent},
   {path:'informacion-usuario', component: ActualizacionComponent},
-  {path: '', redirectTo:'/NavegacionComponent', pathMatch: 'full'},
-  //{path: 'header', component: HeaderComponent},
+  
   //para cuaquier ruta que no existe
+  {path: '', redirectTo:'/NavegacionComponent', pathMatch: 'full'},
   {path: 'NavegacionComponent', component: NavegacionComponent}
 ]
 

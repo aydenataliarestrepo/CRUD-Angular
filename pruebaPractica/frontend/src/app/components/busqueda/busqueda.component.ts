@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { resolve, resolvePtr } from 
+
 import { RegistroService } from '../../services/registro.service';
 
 
@@ -9,14 +9,18 @@ import { RegistroService } from '../../services/registro.service';
   styleUrls: ['./busqueda.component.css']
 })
 
-//usuarios:Usuarios = [] ; 
+
 export class BusquedaComponent implements OnInit {
+  
+  usuarios:any = [] ; 
 
   constructor(private registroServicio: RegistroService) { }
 
   ngOnInit(): void {
     this.registroServicio.getUsuarios().subscribe(
-      res => console.log(res),
+      res => {
+        this.usuarios = res; 
+      },
       err => console.error((err))
       
 
