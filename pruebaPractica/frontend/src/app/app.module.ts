@@ -51,6 +51,7 @@ import {RegistroService} from './services/registro.service';
   providers: [
     RegistroComponent //Almacena los métodos para pedir datos 
   ],
+  exports:[ActualizacionComponent],
   bootstrap: [AppComponent] //Componente principal 
 })
 export class AppModule { }

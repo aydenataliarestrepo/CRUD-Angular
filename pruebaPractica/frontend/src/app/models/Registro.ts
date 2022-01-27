@@ -1,9 +1,9 @@
 export interface Registro {
 
-    idusuario?: number;
+    idusuario: string;
     nombre: string;
     activo: string; 
-    rol:number;
+    rol:string;
 
 
 };

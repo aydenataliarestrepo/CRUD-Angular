@@ -17,7 +17,7 @@ const routes:Routes=[
   {path: 'busqueda', component: BusquedaComponent},
   {path:'creacion-usuario', component: RegistroComponent},
   {path:'informacion-usuario', component: ActualizacionComponent},
-  
+
   //para cuaquier ruta que no existe
   {path: '', redirectTo:'/NavegacionComponent', pathMatch: 'full'},
   {path: 'NavegacionComponent', component: NavegacionComponent}

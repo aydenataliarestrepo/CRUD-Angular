@@ -13,16 +13,18 @@ import {RegistroService} from '../../services/registro.service'
 export class ActualizacionComponent implements OnInit {
 
   @HostBinding('class') classes = 'row';
+  
+  crear: any = [];
 
-  //propiedad
+  /*/propiedad
   crear: Registro = {
     
-    idusuario:1 ,
+    idusuario:'',
     nombre: '',
     activo: '', 
-    rol:1
+    rol: ''
   };
-
+*/
   constructor(private registroService: RegistroService) { }
 
   ngOnInit(): void {
@@ -30,6 +32,7 @@ export class ActualizacionComponent implements OnInit {
 
   GuardarNuevoU() {
     console.log(this.crear)
+    
   }
 
 }
