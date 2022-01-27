@@ -9,8 +9,8 @@ import { RegistroService } from '../../services/registro.service';
   styleUrls: ['./busqueda.component.css']
 })
 
-usuarios:Usuarios = [] ; 
-export class BusquedaComponent. implements OnInit {
+//usuarios:Usuarios = [] ; 
+export class BusquedaComponent implements OnInit {
 
   constructor(private registroServicio: RegistroService) { }
 

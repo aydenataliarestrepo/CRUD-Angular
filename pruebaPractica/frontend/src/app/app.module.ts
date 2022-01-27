@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ActualizacionComponent } from './components/actualizacion/actualizacion.component';
+//
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { BorrarComponent } from './components/borrar/borrar.component';
@@ -26,7 +27,7 @@ import {RegistroService} from './services/registro.service';
     HeaderComponent,
     MenuComponent,
     ActualizacionComponent,
-  
+    BusquedaComponent,
     RegistroComponent,
     BorrarComponent,
     NavegacionComponent,
@@ -38,8 +39,8 @@ import {RegistroService} from './services/registro.service';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule,
-    BusquedaComponent
+    RouterModule
+    //BusquedaComponent
     
   ],
   providers: [
