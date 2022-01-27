@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { Registro } from '../../models/Registro';
+
+//crear servicio
+import {RegistroService} from '../../services/registro.service'
+
 
 @Component({
   selector: 'app-actualizacion',
@@ -7,10 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActualizacionComponent implements OnInit {
 
-  
-  constructor() { }
+  @HostBinding('class') classes = 'row';
+
+  //propiedad
+  crear: Registro = {
+    
+    idusuario:1 ,
+    nombre: '',
+    activo: '', 
+    rol:1
+  };
+
+  constructor(private registroService: RegistroService) { }
 
   ngOnInit(): void {
+  }
+
+  GuardarNuevoU() {
+    console.log(this.crear)
   }
 
 }
