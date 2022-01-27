@@ -1,0 +1,16 @@
+/* Estilos del menú */
+
+.background-overlay {
+    background: rgba(48, 44, 44, 0.733);
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+}
+
+.main-header {
+    position: relative;
+    background: url(../../../assets/img/background.svg);
+    background-size: contain;
+    min-height: 500px;
+}
